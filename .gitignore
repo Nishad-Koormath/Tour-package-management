@@ -1,0 +1,54 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === Django ===
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# === VSCode ===
+.vscode/
+
+# === Pytest / Coverage ===
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# === Django Migrations ===
+**/migrations/
+!*/migrations/__init__.py
+
+# === Node / React ===
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+frontend/yarn.lock
+frontend/package-lock.json
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
