@@ -3,8 +3,8 @@ from rest_framework.routers import DefaultRouter
 from .views import TourPackageViewSet, ScheduleViewSet
 
 router = DefaultRouter()
-router.register(r'', TourPackageViewSet) 
 router.register(r'schedules', ScheduleViewSet) 
+router.register(r'', TourPackageViewSet) 
 
 urlpatterns = [
     path('', include(router.urls)),
