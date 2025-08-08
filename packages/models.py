@@ -10,7 +10,7 @@ class TourPackage(models.Model):
     destination_city = models.ForeignKey(City, related_name='dest_city', on_delete=models.CASCADE)
     description = models.TextField()
     terms = models.TextField()
-    photos = models.ImageField(upload_to='packages/')
+    photos = models.ImageField(upload_to='packages/', blank=True, null=True)
     
     def __str__(self):
         return self.title
