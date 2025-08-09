@@ -23,3 +23,6 @@ class Schedule(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField()
     schedule_photos = models.ImageField(upload_to='schedules/')
+    
+    def __str__(self):
+        return self.title
